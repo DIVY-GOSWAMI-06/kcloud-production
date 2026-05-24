@@ -28,9 +28,9 @@ const Footer = () => {
   return (
     <footer className="bg-black border-t border-gold/20">
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-24 sm:py-32 md:py-40">
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 md:gap-20 mb-20 md:mb-28"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -113,7 +113,7 @@ const Footer = () => {
         </motion.div>
 
         {/* Divider */}
-        <div className="border-t border-gold/20 my-8" />
+        <div className="border-t border-gold/20 my-16 md:my-20" />
 
         {/* Bottom Footer */}
         <motion.div
@@ -121,7 +121,7 @@ const Footer = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="flex flex-col sm:flex-row justify-between items-center gap-6"
+          className="flex flex-col sm:flex-row justify-between items-center gap-8 md:gap-6"
         >
           {/* Copyright */}
           <p className="font-poppins text-gray-400 text-sm text-center sm:text-left">

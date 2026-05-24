@@ -69,21 +69,21 @@ const Services = () => {
   }
 
   return (
-    <section id="services" className="py-20 sm:py-32 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-40 sm:py-56 lg:py-64 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-32 md:mb-40"
         >
-          <h2 className="font-montserrat font-black text-4xl sm:text-5xl mb-6">
+          <h2 className="font-montserrat font-black text-5xl sm:text-6xl mb-6">
             <span className="text-gradient">Our Services</span>
           </h2>
-          <p className="font-poppins text-gray-400 text-lg max-w-2xl mx-auto">
-            We offer comprehensive creative solutions for your brand
+          <p className="font-poppins text-gray-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+            Comprehensive creative solutions
           </p>
         </motion.div>
 

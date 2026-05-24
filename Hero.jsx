@@ -26,7 +26,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 pb-32 md:pb-48"
     >
       {/* Premium gradient background */}
       <div className="absolute inset-0">
@@ -48,12 +48,12 @@ const Hero = () => {
         {/* Main Heading - Premium Typography */}
         <motion.h1
           variants={itemVariants}
-          className="font-montserrat font-black leading-none mb-8"
+          className="font-montserrat font-black leading-none mb-10 md:mb-12"
         >
           <span className="block text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl tracking-tighter">
             WE CREATE
           </span>
-          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-gold via-gold to-yellow-500 text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tighter mt-2">
+          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-gold via-gold to-yellow-500 text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tighter mt-3 sm:mt-4">
             HYPE
           </span>
         </motion.h1>
@@ -61,7 +61,7 @@ const Hero = () => {
         {/* Divider */}
         <motion.div
           variants={itemVariants}
-          className="flex justify-center mb-8"
+          className="flex justify-center mb-10 md:mb-12"
         >
           <div className="h-1 w-16 bg-gradient-to-r from-transparent via-gold to-transparent" />
         </motion.div>
@@ -69,7 +69,7 @@ const Hero = () => {
         {/* Subheading - Minimal and elegant */}
         <motion.p
           variants={itemVariants}
-          className="font-poppins text-gray-300 text-sm sm:text-base tracking-widest uppercase mb-12 max-w-2xl mx-auto"
+          className="font-poppins text-gray-300 text-sm sm:text-base tracking-widest uppercase mb-14 md:mb-16 max-w-2xl mx-auto"
         >
           Branding · Photography · Videography · Production
         </motion.p>
@@ -77,7 +77,7 @@ const Hero = () => {
         {/* CTA Buttons - Premium styling */}
         <motion.div
           variants={itemVariants}
-          className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16"
+          className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-20 md:mb-24"
         >
           {/* Primary CTA */}
           <motion.button

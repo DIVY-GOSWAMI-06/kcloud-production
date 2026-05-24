@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KCloud Production – House Of All Digital Content</title>
+<link rel="icon" type="image/jpeg" href="./src/assets/posts/logo.jpg">
+<link rel="icon" href="./src/assets/posts/favicon.ico">
+<link rel="shortcut icon" href="./src/assets/posts/logo.jpg">
+<link rel="apple-touch-icon" href="./src/assets/posts/logo.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -73,14 +77,6 @@
   .nav-logo {
     display: flex; align-items: center; gap: 14px;
     text-decoration: none;
-  }
-  .nav-logo-icon {
-    width: 46px; height: 46px;
-    background: var(--black);
-    border-radius: 50%;
-    border: 1.5px solid var(--gold-dim);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 20px;
   }
   .nav-logo-text {
     font-family: 'Bebas Neue', sans-serif;
@@ -336,7 +332,7 @@
 
   .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(3, 1fr);  /* change this line */
     gap: 1px;
     background: rgba(200,168,75,0.1);
     border: 1px solid rgba(200,168,75,0.1);
@@ -1007,7 +1003,13 @@
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">
-    <div class="nav-logo-icon">📷</div>
+    <img src="./src/assets/posts/logo.jpg" alt="KCloud Production" style="
+      width: 52px; 
+      height: 52px; 
+      border-radius: 50%; 
+      object-fit: cover;
+      border: 1.5px solid var(--gold-dim);
+      ">
     <div>
       <div class="nav-logo-text">KCLOUD</div>
       <div class="nav-logo-sub">Production</div>
@@ -1028,10 +1030,6 @@
   <div class="hero-grid-overlay"></div>
 
   <div class="hero-content">
-    <div class="hero-eyebrow">
-      <div class="hero-eyebrow-line"></div>
-      <span class="hero-eyebrow-text">Mumbai · Thane · Est. Since Day One</span>
-    </div>
     <h1 class="hero-title">
       KCLOUD
       <span>PRODUCTION</span>
@@ -1161,7 +1159,7 @@
 
     <!-- Row 1 -->
     <div class="portfolio-item" onclick="openLightbox(this)">
-      <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=600&auto=format" alt="Fashion Portfolio" loading="lazy">
+      <img src="./src/assets/posts/post9.jpg" alt="Fashion Portfolio" loading="lazy">
       <div class="portfolio-overlay">
         <div class="portfolio-item-cat">Fashion · Editorial</div>
         <div class="portfolio-item-title">Ethnic Elegance</div>
@@ -1169,7 +1167,7 @@
     </div>
 
     <div class="portfolio-item" onclick="openLightbox(this)" style="margin-top: 40px;">
-      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format" alt="Fashion Shoot" loading="lazy">
+      <img src="./src/assets/posts/post10.jpg" alt="Fashion Shoot" loading="lazy">
       <div class="portfolio-overlay">
         <div class="portfolio-item-cat">Fashion · Western</div>
         <div class="portfolio-item-title">Street Chic</div>
@@ -1177,7 +1175,7 @@
     </div>
 
     <div class="portfolio-item" onclick="openLightbox(this)">
-      <img src="https://images.unsplash.com/photo-1617019114583-affb34d1b3cd?w=600&auto=format" alt="Creative shoot" loading="lazy">
+      <img src="./src/assets/posts/post3.jpg" alt="Creative shoot" loading="lazy">
       <div class="portfolio-overlay">
         <div class="portfolio-item-cat">Creative · Graphic</div>
         <div class="portfolio-item-title">Bold & Branded</div>
@@ -1185,7 +1183,7 @@
     </div>
 
     <div class="portfolio-item" onclick="openLightbox(this)" style="margin-top: -30px;">
-      <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&auto=format" alt="Ethnic Wear" loading="lazy">
+      <img src="./src/assets/posts/post4.jpg" alt="Ethnic Wear" loading="lazy">
       <div class="portfolio-overlay">
         <div class="portfolio-item-cat">Ethnic · Catalogue</div>
         <div class="portfolio-item-title">Kurta Campaign</div>
@@ -1193,7 +1191,7 @@
     </div>
 
     <div class="portfolio-item" onclick="openLightbox(this)" style="margin-top: 20px;">
-      <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&auto=format" alt="Model shoot" loading="lazy">
+      <img src="./src/assets/posts/post5.jpg" alt="Model shoot" loading="lazy">
       <div class="portfolio-overlay">
         <div class="portfolio-item-cat">Fashion · Editorial</div>
         <div class="portfolio-item-title">Runway Ready</div>
@@ -1201,7 +1199,7 @@
     </div>
 
     <div class="portfolio-item" onclick="openLightbox(this)">
-      <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&auto=format" alt="Fashion Model" loading="lazy">
+      <img src="./src/assets/posts/post6.jpg" alt="Fashion Model" loading="lazy">
       <div class="portfolio-overlay">
         <div class="portfolio-item-cat">Branding · Campaign</div>
         <div class="portfolio-item-title">Modern Diva</div>
@@ -1209,7 +1207,7 @@
     </div>
 
     <div class="portfolio-item" onclick="openLightbox(this)" style="margin-top: -20px;">
-      <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&auto=format" alt="Saree shoot" loading="lazy">
+      <img src="./src/assets/posts/post7.jpg" alt="Saree shoot" loading="lazy">
       <div class="portfolio-overlay">
         <div class="portfolio-item-cat">Ethnic · Fashion</div>
         <div class="portfolio-item-title">Saree Editorial</div>
@@ -1217,18 +1215,10 @@
     </div>
 
     <div class="portfolio-item" onclick="openLightbox(this)" style="margin-top: 50px;">
-      <img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=600&auto=format" alt="Sportswear" loading="lazy">
+      <img src="./src/assets/posts/post8.jpg" alt="Sportswear" loading="lazy">
       <div class="portfolio-overlay">
         <div class="portfolio-item-cat">Sportswear · Active</div>
         <div class="portfolio-item-title">Power In Every Pose</div>
-      </div>
-    </div>
-
-    <div class="portfolio-item" onclick="openLightbox(this)" style="margin-top: -40px;">
-      <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=600&auto=format" alt="Product shoot" loading="lazy">
-      <div class="portfolio-overlay">
-        <div class="portfolio-item-cat">Men's · Fashion</div>
-        <div class="portfolio-item-title">Casual Collection</div>
       </div>
     </div>
   </div>
@@ -1243,15 +1233,7 @@
 
   <div class="featured-grid">
     <div class="featured-card fade-up">
-      <div style="background: #EDE9E0; padding: 40px; position: relative; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; overflow: hidden;">
-        <div style="text-align: center; z-index: 2;">
-          <div style="font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: #888; margin-bottom: 20px;">#DesiButDiva</div>
-          <div style="font-size: 14px; color: #555; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px;">Traditional Roots, Trending Moods</div>
-          <div style="font-family: 'Bebas Neue', sans-serif; font-size: 80px; color: #1a2a5e; line-height: 0.9; letter-spacing: 4px;">संस्कारी<br>नारी</div>
-          <div style="font-size: 13px; color: #666; letter-spacing: 2px; margin-top: 20px;">Simple Look. Strong Impact.</div>
-        </div>
-        <div style="position: absolute; top: 16px; right: 16px; background: white; padding: 8px 14px; font-size: 10px; letter-spacing: 1px; color: #333; font-style: italic; box-shadow: 2px 2px 8px rgba(0,0,0,0.1);">Sanskari by Heart,<br>Slaying Every Part!</div>
-      </div>
+      <img src="./src/assets/posts/post2.jpg" alt="Sanskari Nari Campaign" class="featured-img" style="object-fit: contain; object-position: center; aspect-ratio: unset; width: 100%;">
       <div class="featured-label">Creative Direction</div>
     </div>
 
@@ -1299,18 +1281,7 @@
     </div>
 
     <div class="featured-card fade-up">
-      <div style="background: #f0f0f0; padding: 40px; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative;">
-        <div style="position: absolute; inset: 0; background: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(0,0,0,0.02) 20px, rgba(0,0,0,0.02) 21px);"></div>
-        <div style="text-align: left; z-index: 2; width: 100%;">
-          <div style="font-size: 10px; letter-spacing: 3px; color: #555; margin-bottom: 8px;">CONFIDENCE >> IS MY BEST FIT</div>
-          <div style="font-family: 'Bebas Neue', sans-serif; font-size: 100px; line-height: 0.85; color: #111; letter-spacing: 2px; text-shadow: -4px 4px 0 #4A90E2;">BADDIE</div>
-          <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 6px;">
-            <div style="font-size: 11px; letter-spacing: 2px; color: #4A90E2; border: 2px solid #4A90E2; border-radius: 20px; padding: 4px 14px; display: inline-block;">NO FILTER JUST VIBES</div>
-          </div>
-          <div style="margin-top: 20px; font-size: 10px; color: #777; letter-spacing: 1px;">MOOD: UNBOTHERED · FOCUSED · GLOWING</div>
-          <div style="position: absolute; right: 30px; bottom: 40px; text-align: right; font-family: 'Bebas Neue', sans-serif; color: #4A90E2; font-size: 20px; letter-spacing: 1px;">DRIP<br>POSE<br>REPEAT</div>
-        </div>
-      </div>
+      <img src="./src/assets/posts/post1.jpg" alt="Baddie Streetwear Campaign" class="featured-img" style="object-fit: contain; object-position: center; aspect-ratio: unset; width: 100%;">
       <div class="featured-label" style="background: #4A90E2; color: white;">Streetwear Campaign</div>
     </div>
   </div>

@@ -53,30 +53,30 @@ const WhyChooseUs = () => {
   }
 
   return (
-    <section className="py-20 sm:py-32 relative overflow-hidden">
+    <section className="py-40 sm:py-56 lg:py-64 relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-gold rounded-full opacity-3 blur-3xl pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-32 md:mb-40"
         >
-          <h2 className="font-montserrat font-black text-4xl sm:text-5xl mb-6">
+          <h2 className="font-montserrat font-black text-5xl sm:text-6xl mb-6">
             <span className="text-gradient">Why Choose KCLOUD</span>
           </h2>
-          <p className="font-poppins text-gray-400 text-lg max-w-2xl mx-auto">
-            We combine creativity, innovation, and professionalism
+          <p className="font-poppins text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
+            Creativity, innovation, and professionalism
           </p>
         </motion.div>
 
         {/* Features Grid */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12"
+          className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-14"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"

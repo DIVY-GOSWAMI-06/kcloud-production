@@ -83,3 +83,8 @@ body {
 .backdrop-blur-premium {
   backdrop-filter: blur(12px);
 }
+
+.featured-card {
+  overflow: visible;
+}
+

@@ -23,26 +23,26 @@ const About = () => {
   }
 
   return (
-    <section id="about" className="py-20 sm:py-32 relative overflow-hidden">
+    <section id="about" className="py-40 sm:py-56 lg:py-64 relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-gold rounded-full opacity-3 blur-3xl pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-32 md:mb-40"
         >
-          <h2 className="font-montserrat font-black text-4xl sm:text-5xl mb-6">
+          <h2 className="font-montserrat font-black text-5xl sm:text-6xl">
             <span className="text-gradient">About KCLOUD</span>
           </h2>
         </motion.div>
 
         {/* Main Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-24 items-center mb-32 md:mb-40">
           {/* Left - Description */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -50,7 +50,7 @@ const About = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <p className="font-poppins text-gray-300 text-lg leading-relaxed mb-6">
+            <p className="font-poppins text-gray-300 text-lg leading-relaxed mb-8">
               KCLOUD PRODUCTION is a creative digital production house focused on branding, photography, videography, UGC content, and modern visual storytelling for fashion and lifestyle brands.
             </p>
 
@@ -80,7 +80,7 @@ const About = () => {
 
         {/* Stats Grid */}
         <motion.div
-          className="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8"
+          className="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8 mb-32 md:mb-40"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -107,7 +107,7 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="mt-20 p-8 sm:p-12 rounded-2xl border border-gold/30 bg-gradient-to-br from-darkGray/30 to-black/50 backdrop-blur-sm"
+          className="p-10 sm:p-14 md:p-16 rounded-2xl border border-gold/30 bg-gradient-to-br from-darkGray/30 to-black/50 backdrop-blur-sm"
         >
           <h3 className="font-montserrat font-bold text-2xl sm:text-3xl mb-6 text-gold">
             Our Commitment

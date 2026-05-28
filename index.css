@@ -88,3 +88,11 @@ body {
   overflow: visible;
 }
 
+.hamburger {
+   display: none; 
+}
+
+/* Hide the one inside ul on desktop */
+.nav-links .nav-cta {
+   display: none; 
+}
